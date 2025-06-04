@@ -34,7 +34,7 @@ main {
 
 .section {
 	min-height: 100vh;
-	padding: 80px 5%;  /* Updated padding for better spacing */
+	padding: 68px 4.25%;  /* 15% smaller padding */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -53,7 +53,7 @@ header {
 }
 
 nav.navbar {
-	padding: 10px 20px;
+	padding: 8.5px 17px;  /* 15% smaller padding */
 	pointer-events: auto;
 	background: none;
 	border-radius: 0;
@@ -62,11 +62,11 @@ nav.navbar {
 nav ul {
 	display: flex;
 	list-style: none;
-	gap: 15px;
+	gap: 12.75px;  /* 15% smaller gap */
 }
 
 nav a.nav-link {
-	padding: 8px 20px;
+	padding: 6.8px 17px;  /* 15% smaller padding */
 	border-radius: 30px;
 	text-decoration: none;
 	font-weight: 500;
@@ -94,33 +94,33 @@ nav a.nav-link:hover {
 	color: white;
 	position: relative;
 	display: flex;
-	justify-content: flex-start; /* Keep content centered */
+	justify-content: flex-start;
 	align-items: center;
-	padding: 0 0 60px 0;
+	padding: 0 0 51px 0;  /* 15% smaller padding */
 }
 
 .home-content {
 	display: flex;
 	align-items: center;
-	justify-content: center;  /* Center content horizontally */
+	justify-content: center;
 	width: 90%;
-	max-width: 1200px;  /* Limit the max width */
-	padding: 30px;
-	flex-wrap: wrap; /* Allow wrapping if space is constrained */
+	max-width: 1020px;  /* 15% smaller max width */
+	padding: 25.5px;  /* 15% smaller padding */
+	flex-wrap: wrap;
 }
 
 .home-left h1 {
-	font-size: 4rem;  /* Fixed font size for better scalability */
+	font-size: 3.4rem;  /* 15% smaller font size */
 	text-align: left;
 	line-height: 1.2;
-	width: 100%;  /* Ensure it doesn't overflow */
+	width: 100%;
 }
 
 .script-font {
 	position: relative;
 	top: 0;
 	font-family: 'HimalayaScript', cursive;
-	font-size: 6rem;  /* Reasonable size */
+	font-size: 5.1rem;  /* 15% smaller font size */
 	font-weight: normal;
 }
 
@@ -129,36 +129,36 @@ nav a.nav-link:hover {
 	position: relative;
 	font-family: 'HustleBold', sans-serif;
 	font-weight: bold;
-	font-size: 6rem;  /* Adjusted for a more reasonable size */
+	font-size: 5.1rem;  /* 15% smaller font size */
 }
 
 .home-divider {
 	width: 2px;
 	position: relative;
-	height: 300px;  /* Adjusted height */
+	height: 255px;  /* 15% smaller height */
 	background-color: white;
-	margin: 0 20px; /* Space between text */
+	margin: 0 17px; /* 15% smaller margin */
 }
 
 /* Right section */
 .home-right {
 	display: flex;
 	flex-direction: column;
-	align-items: center;  /* Center items vertically */
-	gap: 24px;
-	margin-left: 10%;
+	align-items: center;
+	gap: 20.4px;  /* 15% smaller gap */
+	margin-left: 8.5%;
 }
 
 .tagline {
 	font-family: 'TagLine', cursive;
-	font-size: 2rem;
+	font-size: 1.7rem;  /* 15% smaller font size */
 	line-height: 1.4;
-	max-width: 300px;
+	max-width: 255px;  /* 15% smaller width */
 	text-align: center;
 	color: white;
 	position: relative;
 	top: 0;
-	margin-bottom: 30px; /* Add space */
+	margin-bottom: 25.5px;  /* 15% smaller margin */
 }
 
 /* Down arrow in rounded box */
@@ -168,19 +168,19 @@ nav a.nav-link:hover {
 	justify-content: center;
 	border: 3px solid white;
 	border-radius: 40px;
-	padding: 10px 22px;
-	height: 10rem;  /* Adjusted for a consistent size */
-	width: 10rem;
+	padding: 8.5px 18.7px;  /* 15% smaller padding */
+	height: 8.5rem;  /* 15% smaller size */
+	width: 8.5rem;  /* 15% smaller size */
 	transition: background 0.3s ease;
 	background-color: transparent;
 	position: relative;
 	left: 0;
-	top: 180px;
+	top: 153px;  /* 15% smaller position */
 }
 
 .arrow-box img {
-	height: 5rem;   /* Adjusted size for better fit */
-	width: 2.5rem;
+	height: 4.25rem;   /* 15% smaller size */
+	width: 2.125rem;   /* 15% smaller size */
 }
 
 /* About Section */
@@ -192,28 +192,28 @@ nav a.nav-link:hover {
 
 .heading {
 	font-family: 'HimalayaScript';
-	font-size: 6rem;
+	font-size: 5.1rem;  /* 15% smaller font size */
 }
 
 .subText {
 	font-family: 'TagLine';
-	font-size: 1.5rem;
-	width: 80%;
+	font-size: 1.7rem;  /* 15% smaller font size */
+	width: 68% ;
 	margin: 0px;
 }
 
 .team {
 	display: flex;
 	justify-content: space-evenly;
-	flex-wrap: wrap;  /* Allow items to wrap on small screens */
-	max-width: 1200px;
+	flex-wrap: wrap;
+	max-width: 1020px;  /* 15% smaller max width */
 	margin: 0px;
-	padding: 20px;
+	padding: 17px 17px;  /* 15% smaller padding */
 	width: 100%;
 }
 
 .hex {
-	width: 180px;   /* Adjusted hex size */
+	width: 187px;   /* 15% smaller hex size */
 	text-align: center;
 	transition: transform 0.3s;
 }
@@ -226,11 +226,11 @@ nav a.nav-link:hover {
 }
 
 .hex:hover {
-	transform: scale(1.05);  /* Slight scaling for hover */
+	transform: scale(1.05);
 }
 
 .hex span {
-	margin-top: 10px;
+	margin-top: 8.5px;  /* 15% smaller margin */
 	display: block;
 	font-weight: bold;
 }
@@ -243,10 +243,10 @@ nav a.nav-link:hover {
 }
 
 .contact-section iframe {
-	width: 100%;
-	height: 60vh;  /* Adjusted height */
+	width: 85%;  /* 15% smaller width */
+	height: 1700px; /* 15% smaller height */
 	border: none;
-	margin-top: 20px;
+	margin-top: 17px;  /* 15% smaller margin */
 	overflow: hidden;
 }
 
@@ -275,52 +275,43 @@ nav a.nav-link:hover {
 /* Mobile */
 @media (max-width: 768px) {
 	.home-left h1 {
-		font-size: 5vw;
+		font-size: 4.25vw;  /* 15% smaller font size */
 	}
 
 	.home-content {
 		flex-direction: column;
 		align-items: center;
-		padding: 15px;
+		padding: 12.75px;  /* 15% smaller padding */
 	}
 
 	.script-font {
-		font-size: 10vw;
+		font-size: 8.5vw;  /* 15% smaller font size */
 	}
 
 	.bold-font {
-		font-size: 8vw;
+		font-size: 6.8vw;  /* 15% smaller font size */
 	}
 
 	.arrow-box {
-		width: 20vw;
-		height: 20vw;
+		width: 17vw;  /* 15% smaller width */
+		height: 17vw;  /* 15% smaller height */
 		left: 25%;
-		top: 150px;
+		top: 127px;  /* 15% smaller position */
 	}
 
 	.team {
 		flex-direction: column;
-		padding: 10px 5%;
+		padding: 8.5px 4.25%;  /* 15% smaller padding */
 	}
 
 	.hex {
-		width: 120px;
+		width: 102px;   /* 15% smaller hex size */
 	}
 }
 
 /* Large screens */
 @media (min-width: 1200px) {
 	.home-content {
-		padding: 30px 10%;
-	}
-
-	.home-left h1 {
-		font-size: 3rem;
-	}
-
-	.arrow-box {
-		height: 8vw;
-		width: 8vw;
+		padding: 25.5px 8.5%;  /* 15% smaller padding */
 	}
 }
