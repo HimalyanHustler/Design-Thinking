@@ -94,7 +94,7 @@ nav a.nav-link:hover {
 	color: white;
 	position: relative;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex-end; /* keep the text pushed towards the left */
 	align-items: center;
 	padding: 0 0 51px 0;  /* 15% smaller padding */
 }
@@ -102,20 +102,20 @@ nav a.nav-link:hover {
 .home-content {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	width: 90%;
 	max-width: 1020px;  /* 15% smaller max width */
 	padding: 25.5px;  /* 15% smaller padding */
-	flex-wrap: wrap;
 }
 
 .home-left h1 {
 	font-size: 3.4rem;  /* 15% smaller font size */
 	text-align: left;
 	line-height: 1.2;
-	width: 100%;
+	position: relative;
+	left: 0;  /* restore to previous position */
+	margin-left: 10px;  /* ensure it stays on the left side */
 }
-
 .script-font {
 	position: relative;
 	top: 0;
@@ -162,6 +162,7 @@ nav a.nav-link:hover {
 }
 
 /* Down arrow in rounded box */
+/* Scroll arrow box */
 .arrow-box {
 	display: flex;
 	align-items: center;
@@ -174,8 +175,8 @@ nav a.nav-link:hover {
 	transition: background 0.3s ease;
 	background-color: transparent;
 	position: relative;
-	left: 0;
-	top: 153px;  /* 15% smaller position */
+	left: 200px;  /* restore to previous value */
+	top: 180px;  /* restore to previous value */
 }
 
 .arrow-box img {
