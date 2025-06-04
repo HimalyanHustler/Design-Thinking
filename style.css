@@ -34,7 +34,7 @@ main {
 
 .section {
 	min-height: 100vh;
-	padding: 100px 5%;  /* Updated for better spacing on mobile */
+	padding: 80px 5%;  /* Updated padding for better spacing */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -94,7 +94,7 @@ nav a.nav-link:hover {
 	color: white;
 	position: relative;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start; /* Keep content centered */
 	align-items: center;
 	padding: 0 0 60px 0;
 }
@@ -102,57 +102,63 @@ nav a.nav-link:hover {
 .home-content {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;  /* Center content horizontally */
 	width: 90%;
-	max-width: 1400px;
-	margin-bottom: 0px;
+	max-width: 1200px;  /* Limit the max width */
 	padding: 30px;
+	flex-wrap: wrap; /* Allow wrapping if space is constrained */
 }
 
 .home-left h1 {
-	font-size: 5vw;  /* Use viewport width for better scaling */
+	font-size: 4rem;  /* Fixed font size for better scalability */
 	text-align: left;
 	line-height: 1.2;
+	width: 100%;  /* Ensure it doesn't overflow */
 }
 
 .script-font {
 	position: relative;
-	top: 150px;
-	right: 200px;
-	z-index: 2;
+	top: 0;
 	font-family: 'HimalayaScript', cursive;
-	font-size: 15vw;  /* Scales with the viewport */
+	font-size: 6rem;  /* Reasonable size */
 	font-weight: normal;
 }
 
 .bold-font {
 	z-index: 1;
 	position: relative;
-	left: 20%;
-	top: 75px;
 	font-family: 'HustleBold', sans-serif;
 	font-weight: bold;
-	font-size: 12vw;
+	font-size: 6rem;  /* Adjusted for a more reasonable size */
+}
+
+.home-divider {
+	width: 2px;
+	position: relative;
+	height: 300px;  /* Adjusted height */
+	background-color: white;
+	margin: 0 20px; /* Space between text */
 }
 
 /* Right section */
 .home-right {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	flex-direction: column;
+	align-items: center;  /* Center items vertically */
 	gap: 24px;
+	margin-left: 10%;
 }
 
 .tagline {
 	font-family: 'TagLine', cursive;
-	font-size: 5vw;  /* Use viewport width for scalability */
+	font-size: 2rem;
 	line-height: 1.4;
 	max-width: 300px;
-	text-align: left;
+	text-align: center;
 	color: white;
 	position: relative;
-	top: 80px;
-	right: 40px;
+	top: 0;
+	margin-bottom: 30px; /* Add space */
 }
 
 /* Down arrow in rounded box */
@@ -163,13 +169,18 @@ nav a.nav-link:hover {
 	border: 3px solid white;
 	border-radius: 40px;
 	padding: 10px 22px;
-	height: 15vw;  /* Adjusted for scaling */
-	width: 15vw;
+	height: 10rem;  /* Adjusted for a consistent size */
+	width: 10rem;
 	transition: background 0.3s ease;
 	background-color: transparent;
 	position: relative;
-	left: 20%;
+	left: 0;
 	top: 180px;
+}
+
+.arrow-box img {
+	height: 5rem;   /* Adjusted size for better fit */
+	width: 2.5rem;
 }
 
 /* About Section */
@@ -181,12 +192,12 @@ nav a.nav-link:hover {
 
 .heading {
 	font-family: 'HimalayaScript';
-	font-size: 10rem;
+	font-size: 6rem;
 }
 
 .subText {
 	font-family: 'TagLine';
-	font-size: 2rem;
+	font-size: 1.5rem;
 	width: 80%;
 	margin: 0px;
 }
@@ -194,15 +205,15 @@ nav a.nav-link:hover {
 .team {
 	display: flex;
 	justify-content: space-evenly;
-	flex-wrap: wrap; /* Allow items to wrap for small screens */
-	max-width: 1400px;
+	flex-wrap: wrap;  /* Allow items to wrap on small screens */
+	max-width: 1200px;
 	margin: 0px;
-	padding: 40px 5%;
+	padding: 20px;
 	width: 100%;
 }
 
 .hex {
-	width: 220px;
+	width: 180px;   /* Adjusted hex size */
 	text-align: center;
 	transition: transform 0.3s;
 }
@@ -215,7 +226,7 @@ nav a.nav-link:hover {
 }
 
 .hex:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);  /* Slight scaling for hover */
 }
 
 .hex span {
@@ -233,7 +244,7 @@ nav a.nav-link:hover {
 
 .contact-section iframe {
 	width: 100%;
-	height: 80vh; /* Adjust height */
+	height: 60vh;  /* Adjusted height */
 	border: none;
 	margin-top: 20px;
 	overflow: hidden;
@@ -264,7 +275,7 @@ nav a.nav-link:hover {
 /* Mobile */
 @media (max-width: 768px) {
 	.home-left h1 {
-		font-size: 6vw;
+		font-size: 5vw;
 	}
 
 	.home-content {
@@ -273,34 +284,28 @@ nav a.nav-link:hover {
 		padding: 15px;
 	}
 
-	.tagline {
-		font-size: 6vw;
-		top: 50px;
-		right: 0;
-	}
-
 	.script-font {
-		font-size: 25vw;
+		font-size: 10vw;
 	}
 
 	.bold-font {
-		font-size: 15vw;
+		font-size: 8vw;
 	}
 
 	.arrow-box {
-		width: 30vw;
-		height: 30vw;
+		width: 20vw;
+		height: 20vw;
 		left: 25%;
-		top: 130px;
+		top: 150px;
 	}
 
 	.team {
 		flex-direction: column;
-		padding: 20px 5%;
+		padding: 10px 5%;
 	}
 
 	.hex {
-		width: 150px;
+		width: 120px;
 	}
 }
 
@@ -311,11 +316,11 @@ nav a.nav-link:hover {
 	}
 
 	.home-left h1 {
-		font-size: 4vw;
+		font-size: 3rem;
 	}
 
 	.arrow-box {
-		height: 10vw;
-		width: 10vw;
+		height: 8vw;
+		width: 8vw;
 	}
 }
