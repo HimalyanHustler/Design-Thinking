@@ -96,7 +96,6 @@ nav a.nav-link:hover {
 	justify-content: center;
 	align-items: center;
 	padding: 0 20px 60px 20px;
-	text-align: center;
 }
 
 .home-content {
@@ -111,7 +110,7 @@ nav a.nav-link:hover {
 }
 
 .home-left h1 {
-	font-size: 10vw; /* Make the text scale dynamically */
+	font-size: 10vw; /* Set large font size for the heading */
 	text-align: center;
 	line-height: 1.2;
 	max-width: 100%;
@@ -120,7 +119,7 @@ nav a.nav-link:hover {
 .script-font {
 	position: relative;
 	font-family: 'HimalayaScript', cursive;
-	font-size: 12vw; /* Large font size */
+	font-size: 12vw; /* Very large font size */
 	font-weight: normal;
 }
 
@@ -128,8 +127,8 @@ nav a.nav-link:hover {
 	position: relative;
 	font-family: 'HustleBold', sans-serif;
 	font-weight: bold;
-	font-size: 14vw; /* Large font size for bold */
-	margin-left: 10px;  /* Reduced margin for better balance */
+	font-size: 14vw; /* Larger font size for bold */
+	margin-left: 20px;
 }
 
 /* Vertical line divider */
@@ -155,7 +154,7 @@ nav a.nav-link:hover {
 
 .tagline {
 	font-family: 'TagLine', cursive;
-	font-size: 4vw; /* Scale down tagline more */
+	font-size: 5vw; /* Make tagline more dynamic */
 	line-height: 1.4;
 	margin-bottom: 0;
 	max-width: 80%;
@@ -193,12 +192,12 @@ nav a.nav-link:hover {
 
 .heading {
 	font-family: 'HimalayaScript';
-	font-size: 10vw; /* Large heading font size */
+	font-size: 12vw; /* Large heading font size */
 }
 
 .subText {
 	font-family: 'TagLine';
-	font-size: 2rem;
+	font-size: 2rem; /* Standard font size for subtext */
 	width: 80%;
 	margin: 0px;
 }
@@ -292,7 +291,7 @@ nav a.nav-link:hover {
 /* Home Section */
 @media (max-width: 768px) {
 	.home-left h1 {
-		font-size: 14vw;  /* Shrinking text further */
+		font-size: 12vw;
 	}
 
 	.arrow-box img {
@@ -321,7 +320,7 @@ nav a.nav-link:hover {
 	}
 
 	.heading {
-		font-size: 6vw;  /* Smaller heading for mobile */
+		font-size: 6vw;
 	}
 }
 
@@ -339,51 +338,20 @@ nav a.nav-link:hover {
 	}
 
 	.home-left h1 {
-		font-size: 18vw; /* Even smaller font on mobile */
+		font-size: 15vw; /* Huge font on mobile */
 	}
 
 	.tagline {
-		font-size: 3rem; /* Tagline reduction */
+		font-size: 2rem;
 	}
-}
-/* Improved font scaling */
-.home-left h1 {
-	font-size: clamp(2rem, 10vw, 6rem);
-}
 
-.script-font {
-	font-size: clamp(2rem, 12vw, 7rem);
-}
+	.arrow-box {
+		height: 150px;
+		width: 60px;
+	}
 
-.bold-font {
-	font-size: clamp(2rem, 14vw, 8rem);
-}
-
-/* Arrow positioning fix */
-.arrow-box {
-	position: relative;
-	left: auto;
-	top: auto;
-	margin-top: 40px;
-	align-self: center;
-}
-
-/* Fix for scroll overlapping with fixed navbar */
-.section {
-	padding-top: 140px;
-	margin-top: -140px;
-}
-
-/* Responsive iframe */
-.contact-section iframe {
-	width: 100%;
-	height: 70vh;
-}
-
-/* Optional: reduce padding on small screens */
-@media (max-width: 768px) {
-	.section {
-		padding-top: 100px;
-		margin-top: -100px;
+	.arrow-box img {
+		width: 40px;
+		height: 120px;
 	}
 }

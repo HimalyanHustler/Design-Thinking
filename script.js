@@ -6,6 +6,7 @@ const observer = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
+
         navLinks.forEach(link => {
           link.classList.remove('active');
           if (link.getAttribute('href') === `#${id}`) {
@@ -17,24 +18,20 @@ const observer = new IntersectionObserver(
   },
   {
     root: null,
-    threshold: 0.6
+    threshold: 0.6, // 60% of section must be in view
   }
 );
 
-sections.forEach(section => observer.observe(section));
+sections.forEach(section => {
+  observer.observe(section);
+});
 
-// Smooth scroll with offset
+// Smooth scroll on click
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
     const targetId = this.getAttribute('href').slice(1);
     const targetSection = document.getElementById(targetId);
-    const yOffset = -120;
-    const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-    window.scrollTo({
-      top: y,
-      behavior: 'smooth'
-    });
+    targetSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
